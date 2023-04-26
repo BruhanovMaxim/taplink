@@ -1,0 +1,163 @@
+:root {
+  --box-shadow: 1px 4px 4px 1px rgba(104, 104, 104, 0.3);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+/* ======================================= GRID ==================================================== */
+/* Стили для общего контейнера */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #85ffbd;
+  background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  /* justify-items: center; */
+  max-width: 450px;
+  max-height: 100%;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Стили для шапки */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.name {
+  padding-top: 30px;
+  font-size: 32px;
+}
+
+/* Стили для основного контента */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Стили для описания */
+
+.discription {
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.about {
+  padding: 10px;
+}
+
+/* Стили для кнопок */
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+button {
+  padding: 20px 40px;
+  background-color: #00a6ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+fieldset {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+}
+/* Стили для медиа-запросов */
+
+/* @media screen and (max-width: 640px) {
+  .wrapper {
+    display: grid;
+  }
+} */
+
+/*----------------------- MyCours ---------------------------*/
+.format_about {
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.format_P {
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.price_list {
+  padding-bottom: 50px;
+}
+
+.div_link {
+  display: grid;
+  background: #00a6ff;
+  min-width: 300px;
+  align-items: center;
+  justify-items: center;
+  max-height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.a_link {
+  color: aliceblue;
+  text-decoration: none;
+}
