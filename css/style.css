@@ -111,9 +111,9 @@ button {
 /* FOOTER */
 footer {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  padding: 10px;
-  font-size: 14px;
+  padding: 20px;
 }
 
 fieldset {
