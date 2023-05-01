@@ -12,6 +12,8 @@
 body {
   color: white;
   line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 /*------------------------------------ GRID (Стили для общего контейнера) --------------------------------*/
@@ -20,7 +22,6 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #85ffbd;
   background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
 }
@@ -58,6 +59,7 @@ footer {
   grid-template-columns: 1fr;
   align-content: center;
   justify-items: center;
+  padding: 20px;
 }
 
 .logo {
@@ -71,7 +73,7 @@ footer {
   font-size: 32px;
 }
 
-/*------------------------------ Стили для основного контента -----------------------------------------*/
+/*---------------------------------- Стили для основного контента -------------------------------------*/
 
 .main {
   display: grid;
@@ -81,15 +83,10 @@ footer {
   padding: 20px;
 }
 
-/* Стили для описания */
+/*-------------------------------------------- Стили для описания -------------------------------------*/
 
 .discription {
-  font-size: 16px;
-  padding-bottom: 30px;
-}
-
-.about {
-  padding: 10px;
+  text-align: center;
 }
 
 /*-------------------------------------------- Стили для кнопок ---------------------------------------*/
@@ -97,14 +94,14 @@ footer {
 .buttons {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 .btn {
   padding: 20px 40px;
   background: none;
-  border: 3px solid;
-  border-radius: 7px;
+  border: 2px solid;
+  border-radius: 4px;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -113,23 +110,9 @@ footer {
 
 .btn:hover {
   opacity: 100%;
-  box-shadow: var(--box-shadow);
 }
 
 /*------------------------------------------------- FOOTER ---------------------------------------------*/
-
-footer {
-  display: grid;
-  justify-items: center;
-  padding: 20px;
-}
-
-fieldset {
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  text-align: center;
-}
 
 /*---------------------------------------------- SOCIAL icons ----------------------------------------*/
 
@@ -139,27 +122,26 @@ fieldset {
   justify-items: center;
   padding: 20px;
 }
-
 .icons {
-  opacity: 25%;
+  opacity: 15%;
 }
 .icons:hover {
   opacity: 50%;
 }
-/* Стили для медиа-запросов */
-
-/* @media screen and (max-width: 640px) {
-  .wrapper {
-    display: grid;
-  }
-} */
 
 /*---------------------------------------------- MyCours ---------------------------------------------*/
 .format_text {
   text-align: justify;
   padding-bottom: 50px;
 }
-
 .price_list {
   padding-bottom: 30px;
 }
+
+/*--------------------------------------- медиа-запросы ---------------------------------------------*/
+
+/* @media screen and (max-width: 640px) {
+  .wrapper {
+    display: grid;
+  }
+} */
