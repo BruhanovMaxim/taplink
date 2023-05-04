@@ -81,13 +81,19 @@ footer {
 }
 
 .logo {
-  width: calc(var(--index) * 10);
+  width: 256;
   margin-top: 5vh; /* 40px */
 }
 
 .name {
   padding-top: 30px;
   font-size: 32px;
+}
+
+.img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 50px;
 }
 
 /*---------------------------------- Стили для основного контента -------------------------------------*/
@@ -156,22 +162,41 @@ footer {
   padding-bottom: 30px;
 }
 .card_courses {
-  border-left: 4px solid red;
   text-align: justify;
   font-style: italic;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .card_services {
-  border-left: 4px solid rgb(0, 136, 255);
   text-align: justify;
   font-style: italic;
   padding: 10px;
   margin-bottom: 50px;
 }
 .h123 {
-  margin-bottom: 15px;
+  margin: 15px 0px 15px 0px;
 }
+
+.price {
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+}
+
+/*-------------------------------------------- Таблица - Прайс -----------------------------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #5f5f5f;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
 /*--------------------------------------- медиа-запросы ---------------------------------------------*/
 
 /* @media screen and (max-width: 640px) {
